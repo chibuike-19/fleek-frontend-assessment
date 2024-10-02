@@ -42,7 +42,7 @@ function App() {
             setView={setView}
           />
         </div>
-        <h1 className="text-[#FFFFFF] flex justify-start mt-12 items-center gap-8 text-[22px] font-[600] pt-[40px]  mb-5">
+        <h1 className="text-[#FFFFFF] flex justify-start mt-8 items-center gap-8 text-[22px] font-[600] pt-[40px]  mb-5">
           All Products
         </h1>
         {loading ? (

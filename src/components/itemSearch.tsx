@@ -13,7 +13,7 @@ export const ItemSearch = ({
   view,
 }: ItemSearchProps) => {
   return (
-    <div className="flex justify-center mt-8 sm:items-center items-start gap-8 w-full sm:flex-row flex-col">
+    <div className="flex justify-center mt-8 sm:items-center items-start pb-4 gap-8 w-full sm:flex-row flex-col">
       <form action="" className="sm:w-[80%] w-full relative">
         <svg
           width="18"
