@@ -10,18 +10,15 @@ export const Navbar = () => {
     const [isVisible, setIsVisible] = useState(false);
     const [isExiting, setIsExiting] = useState(false);
 
-      const handleExit = () => {
-        setIsExiting(true); // Trigger fade-out animation
-      };
+    // const handleExit = () => {
+    //   setIsExiting(true); // Trigger fade-out animation
+    // };
 
-      
-
-      // useEffect(() => {
-      //   // Example: Trigger fade-out when `active` becomes false
-      //   if (selectedNavMenu !== menu.value) {
-      //     handleExit();
-      //   }
-      // }, [selectedNavMenu]);
+    // useEffect(() => {
+    //   if (selectedNavMenu !== menu.value) {
+    //     handleExit();
+    //   }
+    // }, [selectedNavMenu]);
 
     useEffect(() => {
       const timer = setTimeout(() => {
@@ -51,7 +48,9 @@ export const Navbar = () => {
   return (
     <div className="bg-[#191919] w-full h-[68px] fixed left-0 top-0 px-8 lg:px-10 flex items-center justify-between z-50">
       <div>
-        <img src={Logo} />
+        <a href="/">
+          <img src={Logo} />
+        </a>
       </div>
       <div className="md:flex hidden">
         <ul className="flex lg:gap-8 gap-6">

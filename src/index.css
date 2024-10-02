@@ -18,13 +18,12 @@
   background: #ffffff;
 }
 
-/* bottom line of hamburger */
 .icon-menu::before {
   top: -7px;
   transition: background ease 0.3s, top ease 0.3s 0.3s, transform ease 0.3s;
 }
 
-/* top line of hamburger */
+
 .icon-menu::after {
   top: 7px;
   transition: background ease 0.3s, top ease 0.3s 0.3s, transform ease 0.3s;
@@ -66,7 +65,6 @@
   color: black;
 }
 
-/* Define animation keyframes for fade-in and slide-up */
 @keyframes slideUp {
   from {
     transform: translateY(80px);
@@ -89,25 +87,18 @@
   }
 }
 
-/* Style for the links */
+
 .nav__link {
   opacity: 0;
   transform: translateY(80px);
   transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-/* Add slide-up and fade-in effect when the link is visible */
 .fade-in {
   animation: slideUp 0.8s forwards;
 }
 
-/* Add slide-down and fade-out effect for exit */
 .fade-out {
   animation: slideDown 0.5s forwards;
 }
 
-/* Active link style */
-.nav__link.active {
-  font-weight: bold;
-  color: #007bff; /* You can adjust this based on your theme */
-}
