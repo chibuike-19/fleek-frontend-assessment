@@ -1,12 +1,13 @@
+
 interface ItemSearchProps {
   search: string;
-  setSearch: React.Dispatch<React.SetStateAction<string>>;
+  onSearch: (query: string) => void;
   view: "grid" | "list";
   setView: React.Dispatch<React.SetStateAction<"grid" | "list">>;
 }
 
 export const ItemSearch = ({
-  setSearch,
+  onSearch,
   search,
   setView,
   view,
@@ -32,7 +33,7 @@ export const ItemSearch = ({
           placeholder="Search..."
           className="border h-[48px] pl-8 rounded-[12px] text-[#A1A1A1] w-full border-[#363636] bg-[#191919]"
           value={search}
-          onChange={(e) => setSearch(e.target.value)}
+          onChange={(e) => onSearch(e.target.value)}
         />
       </form>
       <div className="border overflow-hidden rounded-[12px] bg-[#191919] flex items-center border-[#363636] rounde-[12px] text-[#A1A1A1]">
